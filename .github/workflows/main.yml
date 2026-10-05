@@ -4,9 +4,7 @@ name: first workflow
 
 #set triggers 
 on:
-  push:
-    branches:
-      -main
+  workflow_dispatch:
 #jobs
 jobs:
   print_message:
