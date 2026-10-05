@@ -1,1 +1,20 @@
 
+# pipeline 
+name: first workflow
+
+#set triggers 
+on:
+  push:
+    branches:
+      -main
+#jobs
+on:
+  print_message:
+    runs-on: ubantu_latest
+      steps:
+        -name: print welcome message
+          run: echo 'welcome to the git hub'
+
+
+
+
