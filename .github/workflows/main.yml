@@ -15,7 +15,5 @@ jobs:
     steps:
       - name: Print welcome message
         run: echo "Welcome to GitHub"
-    steps:
-      - name: Print hello message
-        run: echo "hello friends"
+   
 
