@@ -1,11 +1,13 @@
+# Pipeline
+name: First Workflow
 
-# pipeline 
-name: first workflow
-
-#set triggers 
+# Set trigger events
 on:
+  push:
+  branches:
   workflow_dispatch:
-#jobs
+
+# Jobs
 jobs:
   print_message:
     runs-on: ubuntu-latest
@@ -13,5 +15,3 @@ jobs:
     steps:
       - name: Print welcome message
         run: echo "Welcome to GitHub"
-   
-
