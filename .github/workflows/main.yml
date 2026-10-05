@@ -8,13 +8,12 @@ on:
     branches:
       -main
 #jobs
-on:
+jobs:
   print_message:
-    runs-on: ubantu_latest
-      steps:
-        -name: print welcome message
-          run: echo 'welcome to the git hub'
+    runs-on: ubuntu-latest
 
-
+    steps:
+      - name: Print welcome message
+        run: echo "Welcome to GitHub"
 
 
